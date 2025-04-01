@@ -53,7 +53,7 @@ function handleonsumit(){
         if (regularExpression.test(password)) {
             document.getElementById("passerror").innerHTML="";
         } else {
-            document.getElementById("passerror").innerHTML="enter your valid email id";
+            document.getElementById("passerror").innerHTML="enter your a valid email id";
         }
     }
     
