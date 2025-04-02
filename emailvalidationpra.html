@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .color {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <form action="" onsubmit="handleonsumit()">
         <input type="" name="email" id="email" placeholder="enter your email">
-        <span id="error"></span>
+        <span id="emailerror" class="color"></span>
         <br><br>
 
-        <input type="number" placeholder="please enter your mobile number" id="mobilnum">
-        <span id="numerror"></span>
+        <input type="number" name="number" placeholder="please enter your mobile number" id="number">
+        <span id="numerror" class="color"></span>
         <br>
         <br>
 
         <input type="password" name="password" placeholder="please enter your password" id="password">
-        <span id="passerror"></span>
+        <span id="passerror" class="color"></span>
         <br><br>
 
         <input type="submit">

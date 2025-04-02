@@ -2,6 +2,9 @@ function handlesubmit() {
 
     event.preventDefault();
     let number=document.getElementById("number").value;
+
+    console.log("number");
+    
     // console.log('jkjkdjk');
 
     // document.getElementById("numbererror").innerHTML;

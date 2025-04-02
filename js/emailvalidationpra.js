@@ -1,41 +1,45 @@
 function handleonsumit(){
-    let email = document.getElementById("email").value;
-    let mobilnum =document.getElementById("mobilnum").value;
-    let password =document.getElementById("password").value;
+
+    let email1 = document.getElementById("email").value;
+    let number1 =document.getElementById("number").value;
+
+    console.log('mobilnum');
+    
+    let password1 =document.getElementById("password").value;
 
     event.preventDefault();
 
     // console.log('jhgtrt');
 
-    document.getElementById("error").innerHTML;
+    document.getElementById("emailerror").innerHTML;
     document.getElementById("numerror").innerHTML;
     document.getElementById("passerror").innerHTML;
 
-    // console.log("jhjghj");
+    console.log("jhjghj");
 
-    if (email === "") {
-        document.getElementById("error").innerHTML="please enter your emailid";
+    if (email1 === "") {
+        document.getElementById("emailerror").innerHTML="please enter your email id";
         // console.log("hjhjh");
         
     } else {
         var re = /\S+@\S+\.\S+/;
 
-        if (re.test(email)) {
-            document.getElementById("error").innerHTML="";
+        if (re.test(email1)) {
+            document.getElementById("emailerror").innerHTML="";
 
         } else {
-            document.getElementById("error").innerHTML="please enter valid emailid";
+            document.getElementById("emailerror").innerHTML="please enter valid email id";
 
         }
 
     }
 
-    if (mobilnum === "") {
+    if (number1 === "") {
         document.getElementById("numerror").innerHTML="please enter your number";
     } else {
         let num =/^([+]\d{2}[ ])?\d{10}$/;
 
-        if (mobilnum.test(num)) {
+        if (num.test(number1)) {
             document.getElementById("numerror").innerHTML="";
 
         } else {
@@ -44,16 +48,16 @@ function handleonsumit(){
         }
     }
 
-    if (password === "") {
-        document.getElementById("passerror").innerHTML="enter your password";
+    if (password1 === "") {
+        document.getElementById("passerror").innerHTML=" please enter your password";
 
     } else {
         var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
-        if (regularExpression.test(password)) {
+        if (regularExpression.test(password1)) {
             document.getElementById("passerror").innerHTML="";
         } else {
-            document.getElementById("passerror").innerHTML="enter your a valid email id";
+            document.getElementById("passerror").innerHTML="please enter valid email id";
         }
     }
     
