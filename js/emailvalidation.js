@@ -30,24 +30,6 @@ function handlesubmit(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 }
 
