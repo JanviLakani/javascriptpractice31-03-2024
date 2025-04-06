@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #block{
+            display: none;
+        }
+        .error {
+            color: red;
+            font-size: 90%;
+        }
+    </style>
+    <form action="" > 
+        <select onchange="return tretclick()" action=""  name="dental" id="tret" >
+            <option value="0">--select your Treatment--</option>
+            <option value="Teeth clinings">Teeth clinings</option>
+            <option value="Fillings">Fillings</option>
+            <option value="Root canal">Root canal </option>
+            <option value="RCT+Cover">RCT+Cover</option>
+            <option value="Braces/invisalign">Braces/invisalign</option>
+        </select>
+    </form>
+    <br><br><br><br>
+
+    <div id="block">
+        <table border="1" >
+            <tr>
+                <th>tretment</th>
+                <th>seting</th>
+                <th>costing</th>
+                
+            </tr>
+    
+            <tr>
+                <td id="tretment"></td>
+                <td id="seting"></td>
+                <td id="costing"></td>
+            </tr>
+    
+        </table><br><br><br>
+
+        <form action="" onsubmit="return subdate()" name="appdate" id="appdate">
+            appoitment date: <input type="date" name="enterdate" id="enterdate">
+            
+            <span class="error" id="dateroor"></span>
+            <br><br><br>
+
+            <input type="submit">
+
+        </form>
+    </div><br><br><br>
+
+    <div id="printtable"></div>
+  
+   </table>
+
+    
+
+
+
+    <script src="js/11costingaaa.js"></script>
+</body>
+</html>

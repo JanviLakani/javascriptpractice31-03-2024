@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .color {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" onsubmit="handleonsubmit()" >
+        <input type="name" name="name" id="name1" placeholder="enter your fname">
+
+        <span id="nameerror" class="color"></span>
+
+        <br><br>
+        
+        <input type="number" name="age" id="age" placeholder="enter your age">
+
+        <span id="agearror" class="color"></span>
+
+        <br><br>
+
+        <input type="date" name="joiningdate" id="jdate">
+
+        <span id="dateerror" class="color"></span>
+
+        <br><br>
+
+
+        <input type="submit">
+
+    </form>
+
+    <br><br>
+
+
+    <select name="" id="faj" onchange="handlechange()">
+        <option value="0">--select--</option>
+        <option value="name">FNAME</option>
+        <option value="age">AGE</option>
+        <option value="jdate">JOINING DATE</option>
+    </select>
+
+    <!-- <table>
+        <th>name</th>
+        <th>age</th>
+        <th>joining date</th>
+    </table> -->
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="js/7test1_05-04_employeeform.js"></script>
+    
+</body>
+</html>
