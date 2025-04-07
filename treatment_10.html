@@ -13,7 +13,7 @@
       .color {
         color: rgb(126, 118, 14);
         background-position: center;
-        padding: 10px;
+        /* margin: 20px; */
       }
 
       .color1 {
@@ -26,16 +26,24 @@
 
       #bodycolor {
         background-color: lightyellow;
+        color:rgb(54, 29, 5);
       
       }
+
+      .datecolor {
+        color: rgb(56, 47, 8);
+        background-color: rgb(231, 225, 165);
+      }
     </style>
-  </head>
+  </head>  
+
+  
   <body id="bodycolor">
 
     <br>
   
 
-    <select name="tre" id="tre" onchange="handletreatment()">
+    <select class="datecolor" name="tre" id="tre" onchange="handletreatment()">
       <option value="ts">-- teatment select</option>
       <option value="tc">teet cleaning</option>
       <option value="fl">fillings</option>
@@ -44,7 +52,7 @@
       <option value="biii">braces/invisalign</option>
     </select>
 
-    <br /><br />
+    <br /><br /><br>
 
     <div id="money" class="color"></div>
 
@@ -53,8 +61,8 @@
 
     <form action="" id="forddate" onsubmit="handledate()">
       <label for="apd">Appointment date</label>
-      <input  type="date" name="apd" id="apd" />
-      <input type="submit" />
+      <input class="datecolor" type="date" name="apd" id="apd" />
+      <input class="datecolor" type="submit" />
 
       <span id="errorform" class="errorcolor"></span>
 
