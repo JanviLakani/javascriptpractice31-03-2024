@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .error {
+            color: red;
+            font-size: 90%;
+        }
+    </style>
+    <h1>Restorent Bill System</h1>
+
+        <form action="/examples/actions/confirmation.php" onsubmit="return subitems()" > 
+            <select name="itemname" id="itemname">
+                <option value="0">--Select Your Items--</option>
+                <option value="pizza">PIZZA</option>
+                <option value="burger">BURGER</option>
+                <option value="colddrink">COLD-DRINKS</option>
+            </select>
+            <span class="error" id="itemnameerror"></span>
+            <br><br><br>
+
+                <select   name="itempizza" id="itempizza">
+                    <option value="0">--Select Your Pizza Types--</option>
+                    <option value="300">MARGHRITA</option>
+                    <option value="350 ">CORN PIZZA</option>
+                    <option value="370">CHEESE PIZZA</option>
+                </select>
+                <span class="error" id="itemtypeerror"></span>
+
+
+
+                <select   name="pizzaqun" id="pizzaqun">
+                    <option value="0">--Select Your Pizza Quntity--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <span class="error" id="pizzaqunerror"></span>
+                <br><br>
+
+
+
+                <select   name="itembur" id="itembur">
+                    <option value="0">--Select Your burger Types--</option>
+                    <option value="100">VEG-BURGER</option>
+                    <option value="120">ALLO-TIKI</option>
+                </select>
+                <span class="error" id="itemburerror"></span>
+
+
+                <select   name="burqun" id="burqun">
+                    <option value="0">--Select Your Burger Quntity--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <span class="error" id="burqunerror"></span>
+                <br><br>
+
+
+
+                <select   name="itemdrink" id="itemdrink">
+                    <option value="0">--Select Your Cold Drinks--</option>
+                    <option value="30">MAZZA</option>
+                    <option value="20">THAMSUP</option>
+                    <option value="30">SPRITE</option>
+                </select>
+                <span class="error" id="itemdrinkerror"></span>
+
+
+                <select   name="drinkqun" id="drinkqun">
+                    <option value="0">--Select Your Burger Quntity--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> 
+                <span class="error" id="drinkqunerror"></span>
+                <br><br>
+
+                <input type="submit">
+        </form>
+
+        <div id="foodtbl">
+
+        </div>
+
+        <br><br><br>
+
+        <form action="" onsubmit="return dissdata()">
+            <input type="text" id="code" name="code" placeholder=" COUPEN CODE">
+            <span class="error" id="codeerror"></span>
+            <br><br>
+            <input type="submit">
+            <br><br><br>    
+
+        </form>
+
+        <div id="disscount"></div>
+        <div id="your total price "></div>
+
+
+    <script src="js/12hotelsys.js"></script>
+</body>
+</html>
