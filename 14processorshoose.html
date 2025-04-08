@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .error {
+            color: red;
+            font-size: 90%;
+        }
+    </style>
+    <h1>system shoping system</h1>
+    <form action="" onsubmit="return submitpc()">
+        <span>PROCCESSER  :  </span>
+        <span class="error" id="processerErr"></span>
+        <input type="radio" name="processer" value="3000">i3
+        <input type="radio" name="processer" value="3200">i5
+        <input type="radio" name="processer" value="3500">i7
+        <br><br>
+
+        <span>RAM  :  </span>
+        <span class="error" id="ramErr"></span>
+        <input type="radio" name="ram" value="1000">4GB
+        <input type="radio" name="ram" value="1200">8GB
+        <input type="radio" name="ram" value="1500">12GB
+        <br><br>
+
+        <span>MEMORY  :  </span>
+        <span class="error" id="memoryErr"></span>
+        <input type="radio" name="memory" value="2000">256GB
+        <input type="radio" name="memory" value="2200">512GB
+        <input type="radio" name="memory" value="2500">1TB
+        <br><br>
+
+        <span>GRAPHICS CARD  :  </span>
+        <span class="error" id="graphicscardErr"></span>
+        <input type="radio" name="graphicscard" value="4500">YES
+        <input type="radio" name="graphicscard" value="0">NO
+        <br><br>
+
+
+        <br><br><br>
+        <input type="submit"><br><br><br>
+
+        <div id="price"></div><br><br>
+        <div id="type"></div><br><br>
+
+    </form>
+
+    <script src="js/14processorshoose.js"></script>
+</body>
+</html>

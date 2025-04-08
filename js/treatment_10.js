@@ -43,7 +43,7 @@ function handletreatment() {
              <th>treatment</th>
              <th>seating</th>
              <th>costing</th>
-         </tr>
+         </tr>  
      
      `;
 

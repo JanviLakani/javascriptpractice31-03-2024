@@ -26,6 +26,14 @@ function handlesubmit() {
     // const drink_type=parseInt(document.getElementById("drink_type").value)
     // console.log("drink_type",typeof drink_type ,drink_type);
     
+
+
+
+
+
+
+
+    
     
     // console.log(food,food_quantity,fries,fries_quantity);
     
