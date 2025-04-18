@@ -21,11 +21,11 @@
 // console.log(arr,ans);
 
 
-let arr=[10,20,30];
+// let arr=[10,20,30];
 
-let ans=arr.fill(999);
+// let ans=arr.fill(999);
 
-console.log(arr,ans);
+// console.log(arr,ans);
 
 
 
