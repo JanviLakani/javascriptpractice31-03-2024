@@ -86,24 +86,24 @@
 
 // ***************************************** 5
 
-// const person =[
-//     {
-//         name:"amit",
-//         age:19,
-//         course:{
-//             c1: "c",
-//             c2: "html"
-//         }
-//     },
-//     {
-//         name:"mayur",
-//         age:20,
-//         course:{
-//             c1: "c",
-//             c2: "html",
-//         }
-//     }
-// ];
+const person =[
+    {
+        name:"amit",
+        age:19,
+        course:{
+            c1: "c",
+            c2: "html"
+        }
+    },
+    {
+        name:"mayuri",
+        age:20,
+        course:{
+            c1: "c",
+            c2: "html",
+        }
+    }
+];
 
 // person.map((pdata) => {
 
